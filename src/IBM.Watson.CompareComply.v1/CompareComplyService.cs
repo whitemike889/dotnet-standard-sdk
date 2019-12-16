@@ -32,20 +32,20 @@ namespace IBM.Watson.CompareComply.v1
 {
     public partial class CompareComplyService : IBMService, ICompareComplyService
     {
-        const string serviceName = "compare_comply";
+        const string defaultServiceName = "compare_comply";
         private const string defaultServiceUrl = "https://gateway.watsonplatform.net/compare-comply/api";
         public string VersionDate { get; set; }
 
-        public CompareComplyService(string versionDate) : this(versionDate, ConfigBasedAuthenticatorFactory.GetAuthenticator(serviceName)) { }
-        public CompareComplyService(IClient httpClient) : base(serviceName, httpClient) { }
+        public CompareComplyService(string versionDate) : this(versionDate, ConfigBasedAuthenticatorFactory.GetAuthenticator(defaultServiceName)) { }
+        public CompareComplyService(IClient httpClient) : base(defaultServiceName, httpClient) { }
 
-        public CompareComplyService(string versionDate, IAuthenticator authenticator) : base(serviceName, authenticator)
+        public CompareComplyService(string versionDate, IAuthenticator authenticator) : base(defaultServiceName, authenticator)
         {
             if (string.IsNullOrEmpty(versionDate))
             {
                 throw new ArgumentNullException("versionDate cannot be null.");
             }
-            
+
             VersionDate = versionDate;
 
             if (string.IsNullOrEmpty(ServiceUrl))
