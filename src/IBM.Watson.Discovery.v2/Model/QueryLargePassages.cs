@@ -31,7 +31,7 @@ namespace IBM.Watson.Discovery.v2.Model
         [JsonProperty("enabled", NullValueHandling = NullValueHandling.Ignore)]
         public bool? Enabled { get; set; }
         /// <summary>
-        /// When `true`, passages will be returned whithin their respective result.
+        /// When `true`, passages will be returned within their respective result.
         /// </summary>
         [JsonProperty("per_document", NullValueHandling = NullValueHandling.Ignore)]
         public bool? PerDocument { get; set; }

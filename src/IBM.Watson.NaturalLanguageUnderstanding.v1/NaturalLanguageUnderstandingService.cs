@@ -66,6 +66,10 @@ namespace IBM.Watson.NaturalLanguageUnderstanding.v1
         /// - Semantic roles
         /// - Sentiment
         /// - Syntax (Experimental).
+        ///
+        /// If a language for the input text is not specified with the `language` parameter, the service [automatically
+        /// detects the
+        /// language](https://cloud.ibm.com/docs/services/natural-language-understanding?topic=natural-language-understanding-detectable-languages).
         /// </summary>
         /// <param name="features">Specific features to analyze the document for.</param>
         /// <param name="text">The plain text to analyze. One of the `text`, `html`, or `url` parameters is required.

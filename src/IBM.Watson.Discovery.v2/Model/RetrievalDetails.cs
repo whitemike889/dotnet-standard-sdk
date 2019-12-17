@@ -25,7 +25,7 @@ namespace IBM.Watson.Discovery.v2.Model
     public class RetrievalDetails
     {
         /// <summary>
-        /// Indentifies the document retrieval strategy used for this query. `relevancy_training` indicates that the
+        /// Identifies the document retrieval strategy used for this query. `relevancy_training` indicates that the
         /// results were returned using a relevancy trained model.
         ///
         ///  **Note**: In the event of trained collections being queried, but the trained model is not used to return
@@ -45,7 +45,7 @@ namespace IBM.Watson.Discovery.v2.Model
         }
 
         /// <summary>
-        /// Indentifies the document retrieval strategy used for this query. `relevancy_training` indicates that the
+        /// Identifies the document retrieval strategy used for this query. `relevancy_training` indicates that the
         /// results were returned using a relevancy trained model.
         ///
         ///  **Note**: In the event of trained collections being queried, but the trained model is not used to return

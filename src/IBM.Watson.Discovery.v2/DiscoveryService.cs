@@ -557,13 +557,13 @@ namespace IBM.Watson.Discovery.v2
         /// **_/v2/projects/{project_id}/collections/{collection_id}/documents** method.
         ///
         /// **Note:** This operation only works on collections created to accept direct file uploads. It cannot be used
-        /// to modify a collection that conects to an external source such as Microsoft SharePoint.
+        /// to modify a collection that connects to an external source such as Microsoft SharePoint.
         /// </summary>
         /// <param name="projectId">The ID of the project. This information can be found from the deploy page of the
         /// Discovery administrative tooling.</param>
         /// <param name="collectionId">The ID of the collection.</param>
         /// <param name="file">The content of the document to ingest. The maximum supported file size when adding a file
-        /// to a collection is 50 megabytes, the maximum supported file size when testing a confiruration is 1 megabyte.
+        /// to a collection is 50 megabytes, the maximum supported file size when testing a configuration is 1 megabyte.
         /// Files larger than the supported size are rejected. (optional)</param>
         /// <param name="filename">The filename for file. (optional)</param>
         /// <param name="fileContentType">The content type of file. (optional)</param>
@@ -654,36 +654,43 @@ namespace IBM.Watson.Discovery.v2
         }
 
         /// <summary>
-        /// The content type of file.
+        /// Enum values for AddDocument.
         /// </summary>
-        public class AddDocumentFileContentTypeEnumValue
+        public class AddDocumentEnums
         {
             /// <summary>
-            /// Constant APPLICATION_JSON for application/json
+            /// The content type of file.
             /// </summary>
-            public const string APPLICATION_JSON = "application/json";
-            /// <summary>
-            /// Constant APPLICATION_MSWORD for application/msword
-            /// </summary>
-            public const string APPLICATION_MSWORD = "application/msword";
-            /// <summary>
-            /// Constant APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT for application/vnd.openxmlformats-officedocument.wordprocessingml.document
-            /// </summary>
-            public const string APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
-            /// <summary>
-            /// Constant APPLICATION_PDF for application/pdf
-            /// </summary>
-            public const string APPLICATION_PDF = "application/pdf";
-            /// <summary>
-            /// Constant TEXT_HTML for text/html
-            /// </summary>
-            public const string TEXT_HTML = "text/html";
-            /// <summary>
-            /// Constant APPLICATION_XHTML_XML for application/xhtml+xml
-            /// </summary>
-            public const string APPLICATION_XHTML_XML = "application/xhtml+xml";
-            
+            public class FileContentTypeValue
+            {
+                /// <summary>
+                /// Constant APPLICATION_JSON for application/json
+                /// </summary>
+                public const string APPLICATION_JSON = "application/json";
+                /// <summary>
+                /// Constant APPLICATION_MSWORD for application/msword
+                /// </summary>
+                public const string APPLICATION_MSWORD = "application/msword";
+                /// <summary>
+                /// Constant APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT for application/vnd.openxmlformats-officedocument.wordprocessingml.document
+                /// </summary>
+                public const string APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
+                /// <summary>
+                /// Constant APPLICATION_PDF for application/pdf
+                /// </summary>
+                public const string APPLICATION_PDF = "application/pdf";
+                /// <summary>
+                /// Constant TEXT_HTML for text/html
+                /// </summary>
+                public const string TEXT_HTML = "text/html";
+                /// <summary>
+                /// Constant APPLICATION_XHTML_XML for application/xhtml+xml
+                /// </summary>
+                public const string APPLICATION_XHTML_XML = "application/xhtml+xml";
+                
+            }
         }
+
         /// <summary>
         /// Update a document.
         ///
@@ -697,14 +704,14 @@ namespace IBM.Watson.Discovery.v2
         /// the same **document_id** if it exists.
         ///
         /// **Note:** This operation only works on collections created to accept direct file uploads. It cannot be used
-        /// to modify a collection that conects to an external source such as Microsoft SharePoint.
+        /// to modify a collection that connects to an external source such as Microsoft SharePoint.
         /// </summary>
         /// <param name="projectId">The ID of the project. This information can be found from the deploy page of the
         /// Discovery administrative tooling.</param>
         /// <param name="collectionId">The ID of the collection.</param>
         /// <param name="documentId">The ID of the document.</param>
         /// <param name="file">The content of the document to ingest. The maximum supported file size when adding a file
-        /// to a collection is 50 megabytes, the maximum supported file size when testing a confiruration is 1 megabyte.
+        /// to a collection is 50 megabytes, the maximum supported file size when testing a configuration is 1 megabyte.
         /// Files larger than the supported size are rejected. (optional)</param>
         /// <param name="filename">The filename for file. (optional)</param>
         /// <param name="fileContentType">The content type of file. (optional)</param>
@@ -803,36 +810,43 @@ namespace IBM.Watson.Discovery.v2
         }
 
         /// <summary>
-        /// The content type of file.
+        /// Enum values for UpdateDocument.
         /// </summary>
-        public class UpdateDocumentFileContentTypeEnumValue
+        public class UpdateDocumentEnums
         {
             /// <summary>
-            /// Constant APPLICATION_JSON for application/json
+            /// The content type of file.
             /// </summary>
-            public const string APPLICATION_JSON = "application/json";
-            /// <summary>
-            /// Constant APPLICATION_MSWORD for application/msword
-            /// </summary>
-            public const string APPLICATION_MSWORD = "application/msword";
-            /// <summary>
-            /// Constant APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT for application/vnd.openxmlformats-officedocument.wordprocessingml.document
-            /// </summary>
-            public const string APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
-            /// <summary>
-            /// Constant APPLICATION_PDF for application/pdf
-            /// </summary>
-            public const string APPLICATION_PDF = "application/pdf";
-            /// <summary>
-            /// Constant TEXT_HTML for text/html
-            /// </summary>
-            public const string TEXT_HTML = "text/html";
-            /// <summary>
-            /// Constant APPLICATION_XHTML_XML for application/xhtml+xml
-            /// </summary>
-            public const string APPLICATION_XHTML_XML = "application/xhtml+xml";
-            
+            public class FileContentTypeValue
+            {
+                /// <summary>
+                /// Constant APPLICATION_JSON for application/json
+                /// </summary>
+                public const string APPLICATION_JSON = "application/json";
+                /// <summary>
+                /// Constant APPLICATION_MSWORD for application/msword
+                /// </summary>
+                public const string APPLICATION_MSWORD = "application/msword";
+                /// <summary>
+                /// Constant APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT for application/vnd.openxmlformats-officedocument.wordprocessingml.document
+                /// </summary>
+                public const string APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
+                /// <summary>
+                /// Constant APPLICATION_PDF for application/pdf
+                /// </summary>
+                public const string APPLICATION_PDF = "application/pdf";
+                /// <summary>
+                /// Constant TEXT_HTML for text/html
+                /// </summary>
+                public const string TEXT_HTML = "text/html";
+                /// <summary>
+                /// Constant APPLICATION_XHTML_XML for application/xhtml+xml
+                /// </summary>
+                public const string APPLICATION_XHTML_XML = "application/xhtml+xml";
+                
+            }
         }
+
         /// <summary>
         /// Delete a document.
         ///
@@ -840,7 +854,7 @@ namespace IBM.Watson.Discovery.v2
         /// returned (HTTP status code `200`) with the status set to 'deleted'.
         ///
         /// **Note:** This operation only works on collections created to accept direct file uploads. It cannot be used
-        /// to modify a collection that conects to an external source such as Microsoft SharePoint.
+        /// to modify a collection that connects to an external source such as Microsoft SharePoint.
         /// </summary>
         /// <param name="projectId">The ID of the project. This information can be found from the deploy page of the
         /// Discovery administrative tooling.</param>
@@ -1030,8 +1044,8 @@ namespace IBM.Watson.Discovery.v2
         /// </summary>
         /// <param name="projectId">The ID of the project. This information can be found from the deploy page of the
         /// Discovery administrative tooling.</param>
-        /// <param name="naturalLanguageQuery">The natural text query for the training query. (optional)</param>
-        /// <param name="examples">Array of training examples. (optional)</param>
+        /// <param name="naturalLanguageQuery">The natural text query for the training query.</param>
+        /// <param name="examples">Array of training examples.</param>
         /// <param name="filter">The filter used on the collection before the **natural_language_query** is applied.
         /// (optional)</param>
         /// <returns><see cref="TrainingQuery" />TrainingQuery</returns>
@@ -1044,6 +1058,14 @@ namespace IBM.Watson.Discovery.v2
             else
             {
                 projectId = Uri.EscapeDataString(projectId);
+            }
+            if (string.IsNullOrEmpty(naturalLanguageQuery))
+            {
+                throw new ArgumentNullException("`naturalLanguageQuery` is required for `CreateTrainingQuery`");
+            }
+            if (examples == null)
+            {
+                throw new ArgumentNullException("`examples` is required for `CreateTrainingQuery`");
             }
 
             if (string.IsNullOrEmpty(VersionDate))

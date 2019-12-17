@@ -51,7 +51,7 @@ namespace IBM.Watson.Discovery.v2.Model
         [JsonProperty("suggested_query", NullValueHandling = NullValueHandling.Ignore)]
         public string SuggestedQuery { get; set; }
         /// <summary>
-        /// Array of suggested refinments.
+        /// Array of suggested refinements.
         /// </summary>
         [JsonProperty("suggested_refinements", NullValueHandling = NullValueHandling.Ignore)]
         public List<QuerySuggestedRefinement> SuggestedRefinements { get; set; }
